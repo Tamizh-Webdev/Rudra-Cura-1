@@ -6,5 +6,8 @@ node_modules/
 .env.local
 .env.*
 
+# secrets
+service-account.json
+
 # Vercel
 .vercel
