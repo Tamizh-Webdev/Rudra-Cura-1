@@ -1,0 +1,22 @@
+
+> rudra-cura@1.0.0 build
+> npx vite build
+
+The CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 3 modules transformed.
+x Build failed in 932ms
+error during build:
+[vite]: Rollup failed to resolve import "react-router-dom" from "D:/Project/Rudra Cura/src/main.jsx".
+This is most likely unintended because it can break your application at runtime.
+If you do want to externalize this module explicitly add it to
+`build.rollupOptions.external`
+    at viteWarn (file:///D:/Project/Rudra%20Cura/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:65855:17)
+    at onwarn (D:\Project\Rudra Cura\node_modules\@vitejs\plugin-react\dist\index.cjs:112:7)
+    at onRollupWarning (file:///D:/Project/Rudra%20Cura/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:65885:5)
+    at onwarn (file:///D:/Project/Rudra%20Cura/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:65550:7)
+    at file:///D:/Project/Rudra%20Cura/node_modules/rollup/dist/es/shared/node-entry.js:21046:13
+    at Object.logger [as onLog] (file:///D:/Project/Rudra%20Cura/node_modules/rollup/dist/es/shared/node-entry.js:22919:9)
+    at ModuleLoader.handleInvalidResolvedId (file:///D:/Project/Rudra%20Cura/node_modules/rollup/dist/es/shared/node-entry.js:21663:26)
+    at file:///D:/Project/Rudra%20Cura/node_modules/rollup/dist/es/shared/node-entry.js:21621:26

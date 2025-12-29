@@ -35,12 +35,22 @@ This repository contains the Rudra Cura website scaffold with front-end (React +
 1. Install dependencies
    npm install
 
-2. Create a `.env` file with the required variables above (for local dev, use a tool like `vercel env pull` or `dotenv` for your chosen platform).
+2. Create a `.env` file with the required variables above (for local dev, use a tool like `vercel env pull` or `dotenv` for your chosen platform). Do NOT commit secrets to git.
 
-3. Run
+3. Run the frontend dev server
    npm run dev
 
-4. Test the enquiry form in the browser. Submissions go to `/api/submit` which stores to Supabase and sends WhatsApp messages via Twilio.
+4. (Optional) Run the local API shim in a second terminal to test `/api/submit` locally
+   npm run start:api
+   - The API shim listens on port 3000 by default and will run in MOCK mode if `GOOGLE_SERVICE_ACCOUNT_KEY` or `SHEET_ID` are missing.
+
+5. Test the endpoint
+   - Example (PowerShell):
+     curl -v -X POST "http://localhost:3000/api/submit" -H "Content-Type: application/json" -d '{"name":"Test","phone":"+919812345678","service":"Test Service"}'
+
+6. Test the enquiry form in the browser. Submissions will POST to `/api/submit`, which stores to your configured Google Sheet and optionally sends WhatsApp messages via Twilio.
+
+If you want to run both frontend + API in one terminal, consider using a tool like `concurrently` or your terminal multiplexer; I left scripts minimal to avoid adding dev deps.
 
 ## Deployment
 - Recommended: Vercel — serverless API at /api/submit works out-of-the-box.
