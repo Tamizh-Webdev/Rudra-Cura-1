@@ -80,7 +80,8 @@ const [whatsappOptIn, setWhatsappOptIn] = useState(false);
   };
 
   return (
-    <form id="enquiry" onSubmit={submit} className="bg-white p-6 rounded-xl shadow-sm border max-w-xl">
+    
+    <form id="enquiry" onSubmit={submit} className="bg-accent p-6 rounded-xl shadow-sm  max-w-xl">
       <h3 className="text-lg font-semibold mb-4 text-primary">Enquiry / Book a Session</h3>
       <div className="grid grid-cols-1 gap-3">
         <input required name="name" value={form.name} onChange={onChange} placeholder="Full name" className="input"/>
@@ -143,5 +144,6 @@ const [whatsappOptIn, setWhatsappOptIn] = useState(false);
         }
       `}</style>
     </form>
+    
   )
 }

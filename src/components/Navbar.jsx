@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { FiMenu, FiX } from 'react-icons/fi'   // 👈 burger icons
+import { memo } from "react";
 
-export default function Navbar() {
+export default memo(function Navbar() {
   const [open, setOpen] = useState(false)
   const loc = useLocation()
 
@@ -13,10 +14,11 @@ export default function Navbar() {
     { to: '/programs', label: 'Programs' },
     { to: '/about', label: 'About Us' },
     { to: '/careers', label: 'Careers' },
+    { to: '/blog', label: 'Blog' },
   ]
 
   return (
-    <motion.header className="bg-white/70 backdrop-blur-sm sticky top-0 z-50 shadow-sm border-b">
+    <motion.header className="bg-accent/70 backdrop-blur-sm sticky top-0 z-50 shadow-sm border-b">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Logo */}
@@ -41,7 +43,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl text-primary"
+          className="md:hidden text-3xl bg-primary"
           onClick={() => setOpen(!open)}
         >
           {open ? <FiX /> : <FiMenu />}
@@ -69,4 +71,4 @@ export default function Navbar() {
       )}
     </motion.header>
   )
-}
+});

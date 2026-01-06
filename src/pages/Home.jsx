@@ -2,6 +2,7 @@ import React from "react";
 import EnquiryForm from "../components/EnquiryForm";
 import { motion } from "framer-motion";
 import { FiStar, FiHeart, FiShield, FiThumbsUp } from "react-icons/fi";
+import { Helmet } from "react-helmet-async";
 import heroImg from "../images/hero-image-1.jpeg";
 
 const SERVICES = [
@@ -13,6 +14,101 @@ const SERVICES = [
 
 export default function Home() {
   return (
+     <>
+    <Helmet>
+        <title>Rudra Cura | Holistic Healing & Natural Therapies</title>
+        <meta
+          name="description"
+          content="Rudra Cura offers holistic healing therapies like Varma Thokkanam, Dorn Therapy, Reflexology & Aromatherapy for pain relief and wellness."
+        />
+        <meta name="keywords" content="Varma Therapy, Dorn Therapy, Holistic Healing, Natural Therapy Chennai" />
+        <link rel="canonical" href="https://rudracura.com/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "name": "Rudra Cura",
+            "url": "https://rudracura.com",
+            "logo": "https://rudracura.com/logo.png",
+            "image": "https://rudracura.com/hero.webp",
+            "telephone": "+91XXXXXXXXXX",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "IN"
+            },
+            "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "13.0827",
+    "longitude": "80.2707"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "09:00",
+    "closes": "18:00"
+  }],
+            "medicalSpecialty": [
+              "Holistic Therapy",
+              "Varma Thokkanam",
+              "Dorn Therapy",
+              "Reflexology",
+              "Aromatherapy"
+            ],
+            "sameAs": [
+              "https://www.instagram.com/rudracura",
+              "https://www.facebook.com/rudracura"
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Varma Thokkanam therapy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Varma Thokkanam is a traditional Tamil therapy that works on vital energy points to relieve pain and restore balance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Dorn Therapy safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Dorn Therapy is a gentle manual therapy used to correct spinal and joint misalignments safely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need prior appointment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we recommend booking an appointment in advance for personalized consultation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide WhatsApp consultation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide WhatsApp follow-ups and consultation updates with patient consent."
+      }
+    }
+  ]
+})}
+</script>
+
+      </Helmet>
     <div> <section className="relative w-full">
   <motion.img
     src={heroImg}
@@ -73,10 +169,10 @@ export default function Home() {
             <motion.div
               key={s.title}
               whileHover={{ scale: 1.03 }}
-              className="bg-white p-6 rounded-xl shadow-sm border"
+              className="bg-accent p-6 rounded-xl shadow-sm "
             >
               <h4 className="text-xl font-semibold text-primary">{s.title}</h4>
-              <p className="text-gray-700 text-sm mt-2">{s.desc}</p>
+              <p className="text-primary-700 text-sm mt-2">{s.desc}</p>
               <a
                 href="/services"
                 className="text-primary text-sm mt-3 inline-block hover:underline"
@@ -92,23 +188,23 @@ export default function Home() {
       <section>
         <h2 className="text-3xl font-bold text-primary mb-6">Why Choose Rudra Cura?</h2>
         <div className="grid md:grid-cols-4 gap-6">
-          <div className="bg-white p-6 rounded-xl shadow border text-center">
+          <div className="bg-accent p-6 rounded-xl shadow  text-center">
             <FiStar className="text-primary text-4xl mx-auto" />
-            <h4 className="mt-4 font-semibold">Experienced Therapists</h4>
-            <p className="text-sm text-gray-600 mt-2">
+            <h4 className="mt-4 font-semibold text-primary">Experienced Therapists</h4>
+            <p className="text-sm text-gray-600 mt-2 text-primary">
               Skilled practitioners trained in multiple healing modalities.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow border text-center">
+          <div className="bg-accent p-6 rounded-xl shadow  text-center">
             <FiHeart className="text-primary text-4xl mx-auto" />
-            <h4 className="mt-4 font-semibold">Personalised Care</h4>
-            <p className="text-sm text-gray-600 mt-2">
+            <h4 className="mt-4 font-semibold text-primary">Personalised Care</h4>
+            <p className="text-sm mt-2 text-primary">
               Every session is tailored to your unique body and needs.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow border text-center">
+          <div className="bg-accent p-6 rounded-xl shadow  text-center">
             <FiShield className="text-primary text-4xl mx-auto" />
             <h4 className="mt-4 font-semibold">Safe & Natural</h4>
             <p className="text-sm text-gray-600 mt-2">
@@ -116,10 +212,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow border text-center">
+          <div className="bg-accent p-6 rounded-xl shadow  text-center">
             <FiThumbsUp className="text-primary text-4xl mx-auto" />
-            <h4 className="mt-4 font-semibold">Trusted by Many</h4>
-            <p className="text-sm text-gray-600 mt-2">
+            <h4 className="mt-4 font-semibold text-primary">Trusted by Many</h4>
+            <p className="text-sm text-gray-600 mt-2 text-primary">
               Transformational results in pain relief and wellbeing.
             </p>
           </div>
@@ -127,14 +223,14 @@ export default function Home() {
       </section>
 
       {/* CALL TO ACTION */}
-      <section className="bg-primary text-white p-10 rounded-xl text-center shadow-lg">
-        <h2 className="text-3xl font-bold">Start Your Healing Journey</h2>
-        <p className="mt-2 text-lg">
+      <section className="bg-accent/80 text-white p-10 rounded-xl text-center shadow-lg">
+        <h2 className="text-3xl font-bold text-primary">Start Your Healing Journey</h2>
+        <p className="mt-2 text-lg text-primary">
           Book a session today and experience natural, holistic therapy.
         </p>
         <a
           href="/services"
-          className="inline-block mt-5 bg-white text-primary px-6 py-3 rounded-lg shadow font-semibold"
+          className="inline-block mt-5 bg-primary text-white px-6 py-3 rounded-lg shadow font-semibold"
         >
           Book Now
         </a>
@@ -150,7 +246,7 @@ export default function Home() {
 
   <div className="grid md:grid-cols-3 gap-6">
     {/* Placeholder reviews — we’ll replace dynamically later */}
-    <div className="bg-white p-6 rounded-xl shadow-md border">
+    <div className="bg-accent p-6 rounded-xl shadow-md ">
       <p className="text-sm text-gray-700">
         “Amazing experience! I felt relief after my first session.”
       </p>
@@ -160,7 +256,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="bg-white p-6 rounded-xl shadow-md border">
+    <div className="bg-accent p-6 rounded-xl shadow-md ">
       <p className="text-sm text-gray-700">
         “Professional and caring therapists — highly recommend!”
       </p>
@@ -170,7 +266,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="bg-white p-6 rounded-xl shadow-md border">
+    <div className="bg-accent p-6 rounded-xl shadow-md ">
       <p className="text-sm text-gray-700">
         “Helped reduce my chronic pain — excellent service.”
       </p>
@@ -200,5 +296,6 @@ export default function Home() {
       </section>
     </div>
     </div>
+    </>
   );
 }

@@ -11,3 +11,8 @@ service-account.json
 
 # Vercel
 .vercel
+
+# under development
+src\pages\Blog.jsx
+src\pages\PrivacyPolicy.jsx
+src\pages\Terms.jsx
