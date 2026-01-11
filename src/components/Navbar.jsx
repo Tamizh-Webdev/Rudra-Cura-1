@@ -43,7 +43,7 @@ export default memo(function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl bg-primary"
+          className="md:hidden text-3xl bg-/70"
           onClick={() => setOpen(!open)}
         >
           {open ? <FiX /> : <FiMenu />}
@@ -52,7 +52,7 @@ export default memo(function Navbar() {
 
       {/* Mobile Dropdown */}
       {open && (
-        <div className="md:hidden bg-white border-t shadow-sm">
+        <div className="md:hidden bg-accent border-t shadow-sm">
           <nav className="flex flex-col p-4 space-y-4">
             {nav.map((n) => (
               <Link

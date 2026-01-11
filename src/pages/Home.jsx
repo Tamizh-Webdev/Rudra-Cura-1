@@ -7,7 +7,7 @@ import heroImg from "../images/hero-image-1.jpeg";
 
 const SERVICES = [
   { title: "Varma Thokkanam", desc: "Traditional pressure-based therapy for pain relief." },
-  { title: "Dorn Therapy", desc: "Gentle spine & joint correction therapy." },
+  { title: "Dorn Healing", desc: "Gentle spine & joint correction therapy." },
   { title: "Reflexology", desc: "Stimulates healing through foot & hand points." },
   { title: "Aromatherapy", desc: "Healing using therapeutic essential oils." },
 ];
@@ -145,7 +145,7 @@ export default function Home() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-primary">
-            Restore Balance & Wellness Through Holistic Healing
+            Rudra Cura
           </h1>
           <p className="mt-4 text-gray-700 text-lg">
             At <b>Rudra Cura</b>, we blend ancient natural therapies with modern understanding to help you 

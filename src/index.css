@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* html {
+  scroll-behavior: smooth;
+} */
 body {
   @apply min-h-screen text-gray-800;
   background: radial-gradient(
