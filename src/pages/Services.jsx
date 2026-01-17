@@ -1,47 +1,48 @@
 import React, { useState, useRef, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import EnquiryForm from "../components/EnquiryForm"
+import { Helmet } from "react-helmet-async";
 
 const SERVICES = [
   {
     title: "Varma Thokkanam",
-    image: "/images/varma.jpg",
+    image: "/src/images/dorn.jpeg",
     description:
       "An ancient Tamil Siddha technique that stimulates vital energy (varma) points to relieve pain, restore balance, and improve circulation.",
   },
   {
     title: "Dorn Therapy",
-    image: "/images/dorn.jpg",
+    image: "/src/images/dorn.jpeg",
     description:
       "A gentle manual therapy correcting spinal and joint misalignments through guided movements and active client participation.",
   },
   {
     title: "Reflexology",
-    image: "/images/reflexology.jpg",
+    image: "/src/images/dorn.jpeg",
     description:
       "Targeted pressure therapy on reflex points of the feet and hands to support internal organs and promote deep relaxation.",
   },
   {
     title: "Foot Gua Sha",
-    image: "/images/gua-sha.jpg",
+    image: "/src/images/dorn.jpeg",
     description:
       "A traditional scraping technique applied to the feet to improve circulation, detoxification, and energy flow.",
   },
   {
     title: "Meipadam",
-    image: "/images/meipadam.jpg",
+    image: "/src/images/dorn.jpeg",
     description:
       "A classical Siddha body therapy focused on muscle relaxation, joint mobility, and nervous system balance.",
   },
   {
     title: "Meditation",
-    image: "/images/meditation.jpg",
+    image: "/src/images/dorn.jpeg",
     description:
       "Guided meditation sessions designed to calm the mind, reduce stress, and improve emotional wellbeing.",
   },
   {
     title: "Kriya",
-    image: "/images/kriya.jpg",
+    image: "/src/images/dorn.jpeg",
     description:
       "A powerful yogic practice combining breath, awareness, and energy alignment for holistic transformation.",
   },
@@ -74,6 +75,88 @@ export default function Services() {
   }, [activeIndex])
 
   return (
+    <>
+      <Helmet>
+  <script type="application/ld+json">
+    {JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Varma Thokkanam Therapy",
+        "description": "Traditional Siddha Varma Thokkanam therapy for pain relief, energy balance and holistic healing.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Rudra Cura",
+          "url": "https://rudracura.com"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "India"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Dorn Therapy",
+        "description": "Gentle manual therapy for spinal alignment and joint correction.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Rudra Cura"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Reflexology Therapy",
+        "description": "Reflexology therapy for stress relief and internal balance.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Rudra Cura"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Meditation and Kriya",
+        "description": "Guided meditation and kriya practices for mental clarity and emotional wellbeing.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Rudra Cura"
+        }
+      }
+    ])}
+  </script>
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Varma Thokkanam therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Varma Thokkanam is a traditional Siddha therapy that stimulates vital energy points to relieve pain and restore balance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dorn Therapy safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Dorn Therapy is a gentle and safe manual therapy suitable for all age groups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I book a session at Rudra Cura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can book a session through our website enquiry form or contact us directly via WhatsApp."
+          }
+        }
+      ]
+    })}
+  </script>
+</Helmet>
+
     <div className="space-y-16">
       {/* HEADER */}
       <section className="text-center max-w-3xl mx-auto">
@@ -181,5 +264,6 @@ export default function Services() {
         />
       </div>
     </div>
+    </>
   )
 }

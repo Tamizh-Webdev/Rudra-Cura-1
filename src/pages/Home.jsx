@@ -248,30 +248,31 @@ export default function Home() {
     {/* Placeholder reviews — we’ll replace dynamically later */}
     <div className="bg-accent p-6 rounded-xl shadow-md ">
       <p className="text-sm text-gray-700">
-        “Amazing experience! I felt relief after my first session.”
+        “I'm blessed to have Mr. GOWRI SHANKAR JI..He healed me as well as my wife well. Our energy level got increased.Who is connected with divine , He is making understand each and everything Do's and Don's. Body alignment now Paka..My heartfelt Gratitude to Shankar ji..
+”
       </p>
       <div className="mt-4 flex items-center space-x-2">
-        <span className="font-semibold text-primary">John D.</span>
+        <span className="font-semibold text-primary">Shyam Sundar</span>
         <span className="text-yellow-400">★★★★★</span>
       </div>
     </div>
 
     <div className="bg-accent p-6 rounded-xl shadow-md ">
       <p className="text-sm text-gray-700">
-        “Professional and caring therapists — highly recommend!”
+        “We have had the wonderful experience of treating my son at this clinic. My son is 14 year ago old mild autistic. He has improved tremendously with the treatment. Learns things faster, has become much more calm and happier. We are truly glad to have found Gauri Shankar sir and started the therapy”
       </p>
       <div className="mt-4 flex items-center space-x-2">
-        <span className="font-semibold text-primary">Priya S.</span>
+        <span className="font-semibold text-primary">Manisha Verma</span>
         <span className="text-yellow-400">★★★★★</span>
       </div>
     </div>
 
     <div className="bg-accent p-6 rounded-xl shadow-md ">
       <p className="text-sm text-gray-700">
-        “Helped reduce my chronic pain — excellent service.”
+        “I am blessed to get treated by Brother Gowrishankar... His assessment is awesome. He is my Guru in making me understand the Body - Mind Alignment. I owe my fullest Gratitude to him.”
       </p>
       <div className="mt-4 flex items-center space-x-2">
-        <span className="font-semibold text-primary">Arun K.</span>
+        <span className="font-semibold text-primary">Sankaran B.</span>
         <span className="text-yellow-400">★★★★★</span>
       </div>
     </div>
@@ -279,7 +280,7 @@ export default function Home() {
 
   <div className="text-center">
     <a
-      href="https://maps.google.com"
+      href="https://www.google.com/search?q=rudra+cura&rlz=1C1OPNX_enIN1101IN1102&oq=rudra+cura&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg0IARAuGK8BGMcBGIAEMgcIAhAAGIAEMgcIAxAAGO8FMgcIBBAAGO8FMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINDY2NmowajSoAgCwAgE&sourceid=chrome&ie=UTF-8&zx=1768278386877&no_sw_cr=1#"
       target="_blank"
       rel="noopener noreferrer"
       className="text-primary font-semibold hover:underline"
