@@ -10,7 +10,7 @@ import { slugify } from "../utils/slug"
 const SERVICES = [
   {
     title: "Varma Thokkanam",
-    image: "/src/images/varma.jpg",
+    image: "/images/varma.jpg",
     description:
       "An ancient Tamil Siddha therapy that stimulates vital energy points to relieve pain and restore balance.",
   },
@@ -22,31 +22,31 @@ const SERVICES = [
   },
   {
     title: "Reflexology",
-    image: "/src/images/Reflexology.jpg",
+    image: "/images/Reflexology.jpg",
     description:
       "Targeted pressure therapy on reflex points to support internal organs and deep relaxation.",
   },
   {
     title: "Foot Gua Sha",
-    image: "/src/images/footguasha.jpg",
+    image: "/images/footguasha.jpg",
     description:
       "Traditional scraping therapy applied to the feet to improve circulation and energy flow.",
   },
   {
     title: "Meipadam",
-    image: "/src/images/meipadam.jpg",
+    image: "/images/meipadam.jpg",
     description:
       "Classical Siddha body therapy focused on muscle relaxation and nervous system balance.",
   },
   {
     title: "Meditation",
-    image: "/src/images/meditation.jpg",
+    image: "/images/meditation.jpg",
     description:
       "Guided meditation sessions to calm the mind and enhance emotional wellbeing.",
   },
   {
     title: "Kriya",
-    image: "/src/images/kriya.webp",
+    image: "/images/kriya.webp",
     description:
       "A powerful yogic practice combining breath, awareness, and energy alignment.",
   },
