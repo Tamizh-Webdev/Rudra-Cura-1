@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { FiMenu, FiX } from 'react-icons/fi'   // 👈 burger icons
 import { memo } from "react";
+import logo from '../images/logo.jpeg';
 
 export default memo(function Navbar() {
   const [open, setOpen] = useState(false)
@@ -28,7 +29,7 @@ export default memo(function Navbar() {
   aria-label="Rudra Cura Home"
 >
   <img
-    src="/src/images/logo.jpeg"
+    src={logo}
     alt="Rudra Cura Logo"
     width="40"
     height="40"

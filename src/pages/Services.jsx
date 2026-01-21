@@ -4,49 +4,57 @@ import EnquiryForm from "../components/EnquiryForm"
 import { Helmet } from "react-helmet-async"
 import { Link } from "react-router-dom"
 import { slugify } from "../utils/slug"
+import varmaImg from "../images/varma.jpg"
+import dorn from "../images/dorn.jpg"
+import reflexology from "../images/Reflexology.jpg"
+import footguasha from "../images/footguasha.jpg"
+import meditation from "../images/kriya.webp"
+import kriya from "../images/kriya.jpg"
+import meipadam from "../images/meipadam.jpg"
+
 
 /* ================= SERVICES DATA ================= */
 
 const SERVICES = [
   {
     title: "Varma Thokkanam",
-    image: "/images/varma.jpg",
+    image: {varmaImg},
     description:
       "An ancient Tamil Siddha therapy that stimulates vital energy points to relieve pain and restore balance.",
   },
   {
     title: "Dorn Therapy",
-    image: "/src/images/dorn.jpg",
+    image: {dorn},
     description:
       "A gentle manual therapy correcting spinal and joint misalignments through guided movements.",
   },
   {
     title: "Reflexology",
-    image: "/images/Reflexology.jpg",
+    image: {reflexology},
     description:
       "Targeted pressure therapy on reflex points to support internal organs and deep relaxation.",
   },
   {
     title: "Foot Gua Sha",
-    image: "/images/footguasha.jpg",
+    image: {footguasha},
     description:
       "Traditional scraping therapy applied to the feet to improve circulation and energy flow.",
   },
   {
     title: "Meipadam",
-    image: "/images/meipadam.jpg",
+    image: {meipadam},
     description:
       "Classical Siddha body therapy focused on muscle relaxation and nervous system balance.",
   },
   {
     title: "Meditation",
-    image: "/images/meditation.jpg",
+    image: {meditation},
     description:
       "Guided meditation sessions to calm the mind and enhance emotional wellbeing.",
   },
   {
     title: "Kriya",
-    image: "/images/kriya.webp",
+    image: {kriya},
     description:
       "A powerful yogic practice combining breath, awareness, and energy alignment.",
   },
