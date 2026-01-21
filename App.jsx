@@ -5,6 +5,8 @@ import Footer from './src/components/Footer'
 import Programs from './src/pages/Programs'
 import About from './src/pages/About'
 import { lazy, Suspense } from "react";
+import ServiceDetail from "./src/pages/ServiceDetail"
+
 const Home = lazy(() => import("./src/pages/Home"));
 const Services = lazy(() => import("./src/pages/Services"));
 const Careers = lazy(() => import("./src/pages/Careers"));
@@ -13,6 +15,7 @@ const Blog = lazy(() => import("./src/pages/Blog"));
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/services" element={<Services />} />
+    <Route path="/services/:slug" element={<ServiceDetail />} />
   </Routes>
 </Suspense>
  export default function App() {
@@ -33,6 +36,7 @@ const Blog = lazy(() => import("./src/pages/Blog"));
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/programs" element={<Programs />} />
             <Route path="/about" element={<About />} />
             <Route path="/careers" element={<Careers />} />

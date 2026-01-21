@@ -22,9 +22,25 @@ export default memo(function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-primary">
-          RUDRA <span className="font-light">CURA</span>
-        </Link>
+        <Link
+  to="/"
+  className="flex items-center gap-2 text-2xl font-bold text-primary"
+  aria-label="Rudra Cura Home"
+>
+  <img
+    src="/src/images/logo.jpeg"
+    alt="Rudra Cura Logo"
+    width="40"
+    height="40"
+    loading="eager"
+    decoding="async"
+    className="h-10 w-10 object-contain"
+  />
+
+  <span>
+    RUDRA <span className="font-light">CURA</span>
+  </span>
+</Link>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-8">

@@ -8,8 +8,7 @@ export default function About() {
     <>
       {/* ================= SEO META ================= */}
       <Helmet>
-        <title>About Rudra Cura | Holistic Healing & Natural Therapies</title>
-
+        <title>About Rudra Cura | Holistic Wellness Center in Chennai</title>
         {/* Short meta description */}
         <meta
           name="description"
@@ -21,7 +20,15 @@ export default function About() {
           name="keywords"
           content="Rudra Cura, holistic healing center, Varma Thokkanam, Dorn Therapy, reflexology, alternative therapy near me, natural pain relief, energy healing India"
         />
-
+<meta property="og:title" content="About Rudra Cura | Holistic Wellness Center in Chennai" />
+<meta
+  property="og:description"
+  content="Rudra Cura is a Chennai-based holistic wellness center offering natural healing therapies rooted in traditional wisdom and compassionate care."
+/>
+<meta property="og:url" content="https://rudracura.com/about" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Rudra Cura" />
+<meta property="og:image" content="https://rudracura.com/og/about.jpg" />
         {/* LocalBusiness + About schema */}
         <script type="application/ld+json">
           {JSON.stringify({

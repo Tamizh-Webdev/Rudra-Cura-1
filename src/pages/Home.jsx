@@ -3,7 +3,7 @@ import EnquiryForm from "../components/EnquiryForm";
 import { motion } from "framer-motion";
 import { FiStar, FiHeart, FiShield, FiThumbsUp } from "react-icons/fi";
 import { Helmet } from "react-helmet-async";
-import heroImg from "../images/hero-image-1.jpeg";
+import heroImg from "../images/hero-image-1.jpg";
 
 const SERVICES = [
   { title: "Varma Thokkanam", desc: "Traditional pressure-based therapy for pain relief." },
@@ -16,11 +16,11 @@ export default function Home() {
   return (
      <>
     <Helmet>
-        <title>Rudra Cura | Holistic Healing & Natural Therapies</title>
-        <meta
-          name="description"
-          content="Rudra Cura offers holistic healing therapies like Varma Thokkanam, Dorn Therapy, Reflexology & Aromatherapy for pain relief and wellness."
-        />
+        <title>Rudra Cura | Holistic Healing & Natural healing</title>
+       <meta
+  name="description"
+  content="Rudra Cura offers holistic healing services in Chennai including Varma Thokkanam, Dorn Therapy, Reflexology and Aromatherapy for pain relief and wellness. Book a session today."
+/>
         <meta name="keywords" content="Varma Therapy, Dorn Therapy, Holistic Healing, Natural Therapy Chennai" />
         <link rel="canonical" href="https://rudracura.com/" />
         <script type="application/ld+json">
@@ -31,15 +31,15 @@ export default function Home() {
             "url": "https://rudracura.com",
             "logo": "https://rudracura.com/logo.png",
             "image": "https://rudracura.com/hero.webp",
-            "telephone": "+91XXXXXXXXXX",
+            "telephone": "+917299636075",
             "address": {
               "@type": "PostalAddress",
               "addressCountry": "IN"
             },
             "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "13.0827",
-    "longitude": "80.2707"
+    "latitude": "13.023139",
+    "longitude": "80.223056"
   },
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
@@ -52,18 +52,22 @@ export default function Home() {
       "Saturday"
     ],
     "opens": "09:00",
-    "closes": "18:00"
+    "closes": "21:00"
   }],
             "medicalSpecialty": [
-              "Holistic Therapy",
+              "Holistic healing",
               "Varma Thokkanam",
               "Dorn Therapy",
               "Reflexology",
-              "Aromatherapy"
+              "Aromatherapy", 
+              "Footguasha", 
+              "Meditation", 
+              "Kriya", "Meipadam"
             ],
             "sameAs": [
-              "https://www.instagram.com/rudracura",
-              "https://www.facebook.com/rudracura"
+              "https://www.instagram.com/rudra_cura/",
+              "https://www.facebook.com/profile.php?id=61574053940608",
+              "https://www.youtube.com/@RudraCura"
             ]
           })}
         </script>
@@ -74,7 +78,7 @@ export default function Home() {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Varma Thokkanam therapy?",
+      "name": "What is Varma Thokkanam?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Varma Thokkanam is a traditional Tamil therapy that works on vital energy points to relieve pain and restore balance."
@@ -280,7 +284,7 @@ export default function Home() {
 
   <div className="text-center">
     <a
-      href="https://www.google.com/search?q=rudra+cura&rlz=1C1OPNX_enIN1101IN1102&oq=rudra+cura&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg0IARAuGK8BGMcBGIAEMgcIAhAAGIAEMgcIAxAAGO8FMgcIBBAAGO8FMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINDY2NmowajSoAgCwAgE&sourceid=chrome&ie=UTF-8&zx=1768278386877&no_sw_cr=1#"
+      href="https://www.google.com/search?q=rudra+cura&rlz=1C1OPNX_enIN1101IN1102&oq=rudra+cura&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg0IARAuGK8BGMcBGIAEMgcIAhAAGIAEMgcIAxAAGO8FMgcIBBAAGO8FMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINDY2NmowajSoAgCwAgE&sourceid=chrome&ie=UTF-8&zx=1768278386877&no_sw_cr=1#lrd=0x3a5267a7b72a67f7:0x35c78b16e01ff21d,1,,,,"
       target="_blank"
       rel="noopener noreferrer"
       className="text-primary font-semibold hover:underline"

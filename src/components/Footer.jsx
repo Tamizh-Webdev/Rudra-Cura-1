@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {
   FaInstagram,
   FaFacebook,
-  FaWhatsapp,
+  FaWhatsapp, FaYoutube,
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
@@ -23,7 +23,7 @@ export default function Footer() {
         "addressLocality": "Chennai",
         "addressCountry": "IN"
       },
-      "email": "info@rudracura.com",
+      "email": "rudracura@gmail.com",
       "sameAs": [
         "https://www.instagram.com/rudracura",
         "https://www.facebook.com/rudracura"
@@ -85,21 +85,21 @@ export default function Footer() {
 
           <p className="text-sm text-gray-600 mb-2">
             <FaMapMarkerAlt className="inline mr-2 text-primary" />
-            Chennai, Tamil Nadu, India
+            29/1 Karaneeswarar temple road, Saidapet, Chennai- 15
           </p>
 
           <p className="text-sm">
             Email:{" "}
             <a
-              href="mailto:info@rudracura.com"
+              href="mailto:rudracura@gmail.com"
               className="text-primary hover:underline"
             >
-              info@rudracura.com
+              rudracura@gmail.com
             </a>
           </p>
 
           <a
-            href="https://www.google.com/maps"
+            href="https://maps.app.goo.gl/xuWstpNSaMqWP3jj7"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-2 text-sm text-primary hover:underline"
@@ -109,7 +109,7 @@ export default function Footer() {
           <div className="mt-3 rounded-lg overflow-hidden border">
   <iframe
     title="Rudra Cura Location"
-    src="https://www.google.com/maps?q=Chennai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d971.7991641972324!2d80.22241826962924!3d13.023145305816614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzIzLjMiTiA4MMKwMTMnMjMuMCJF!5e0!3m2!1sen!2sin!4v1768967142698!5m2!1sen!2sin"
     width="100%"
     height="180"
     loading="lazy"
@@ -123,15 +123,16 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Follow Us</h4>
           <div className="flex gap-4 text-xl text-gray-600">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-primary">
+            <a href="https://www.instagram.com/rudra_cura/" target="_blank" rel="noreferrer" className="hover:text-primary">
               <FaInstagram />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-primary">
+            <a href="https://www.facebook.com/profile.php?id=61574053940608" target="_blank" rel="noreferrer" className="hover:text-primary">
               <FaFacebook />
             </a>
-            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noreferrer" className="hover:text-primary">
+            <a href="https://wa.me/917299636075" target="_blank" rel="noreferrer" className="hover:text-primary">
               <FaWhatsapp />
             </a>
+            <a href="https://www.youtube.com/@RudraCura" target="_blank" rel="noreferrer" className="hover:text-primary"> <FaYoutube /> </a>
           </div>
         </div>
          </div>
