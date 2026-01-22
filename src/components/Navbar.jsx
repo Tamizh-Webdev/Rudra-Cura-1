@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { FiMenu, FiX } from 'react-icons/fi'   // 👈 burger icons
 import { memo } from "react";
-import logo from '../images/logo.jpeg';
+import logo from '/images/logo.jpeg';
 
 export default memo(function Navbar() {
   const [open, setOpen] = useState(false)

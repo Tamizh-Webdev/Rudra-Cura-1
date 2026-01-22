@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import founderImage from "/src/images/founder.webp";
+import founderImage from "/images/founder.webp";
 
 export default function About() {
   return (

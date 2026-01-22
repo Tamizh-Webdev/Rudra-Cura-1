@@ -3,7 +3,7 @@ import EnquiryForm from "../components/EnquiryForm";
 import { motion } from "framer-motion";
 import { FiStar, FiHeart, FiShield, FiThumbsUp } from "react-icons/fi";
 import { Helmet } from "react-helmet-async";
-import heroImg from "../images/hero-image-1.jpg";
+import heroImg from "/images/hero-image-1.jpg";
 
 const SERVICES = [
   { title: "Varma Thokkanam", desc: "Traditional pressure-based therapy for pain relief." },
