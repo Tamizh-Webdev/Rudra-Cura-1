@@ -6,6 +6,7 @@ import Programs from './src/pages/Programs'
 import About from './src/pages/About'
 import { lazy, Suspense } from "react";
 import ServiceDetail from "./src/pages/ServiceDetail"
+import NotFound from "./src/pages/NotFound"
 
 const Home = lazy(() => import("./src/pages/Home"));
 const Services = lazy(() => import("./src/pages/Services"));
@@ -41,6 +42,7 @@ const Blog = lazy(() => import("./src/pages/Blog"));
             <Route path="/about" element={<About />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
         </div>
