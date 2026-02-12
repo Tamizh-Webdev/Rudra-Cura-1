@@ -218,7 +218,8 @@ export default function EnquiryForm({
           <button
             type="submit"
             disabled={loading}
-            className="Submit-button bg-primary text-white px-4 py-2 rounded"
+            aria-label="Submit Enquiry Form"
+            className="bg-primary text-white px-4 py-2 rounded"
           >
             {loading ? "Sending…" : "Submit Enquiry"}
           </button>

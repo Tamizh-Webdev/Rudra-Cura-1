@@ -18,7 +18,7 @@ export default function App() {
       <Navbar />
 
       <main className="flex-1 max-w-7xl mx-auto px-4 py-10 w-full">
-        <div className="bg-white/70 backdrop-blur-xl p-6">
+        <div className=" backdrop-blur-xl p-6">
           <Suspense
             fallback={
               <div className="flex justify-center items-center py-20 text-gray-600">

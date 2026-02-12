@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { FiMenu, FiX } from 'react-icons/fi'   // 👈 burger icons
 import { memo } from "react";
-import logo from '/images/logo.jpeg';
+import logo from '/images/logo.webp';
 
 export default memo(function Navbar() {
   const [open, setOpen] = useState(false)
@@ -34,7 +34,7 @@ export default memo(function Navbar() {
     height="40"
     loading="eager"
     decoding="async"
-    className="h-10 w-10 object-contain"
+    className="h-10 w-10 object-contain rounded-full shadow"
   />
 
   <span>
@@ -59,7 +59,8 @@ export default memo(function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="sandwich-button md:hidden text-3xl bg-/70"
+        aria-label="Toggle Mobile Menu"
+          className="md:hidden text-3xl bg-white/70 rounded-full p-2"
           onClick={() => setOpen(!open)}
         >
           {open ? <FiX /> : <FiMenu />}
