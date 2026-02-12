@@ -5,7 +5,14 @@ import { motion } from "framer-motion";
 import { FiStar, FiHeart, FiShield, FiThumbsUp } from "react-icons/fi";
 import { Helmet } from "react-helmet-async";
 import heroImg from "/images/Hero.webp";
+import { lazy, Suspense } from "react";
 
+const CoverflowSlider = lazy(() =>
+  import("../components/CoverflowSlider")
+);
+<Suspense fallback={<div>Loading gallery...</div>}>
+  <CoverflowSlider />
+</Suspense>
 const SERVICES = [
   { title: "Varma Thokkanam", desc: "Traditional pressure-based therapy for pain relief." },
   { title: "Dorn Healing", desc: "Gentle spine & joint correction therapy." },
@@ -172,6 +179,7 @@ export default function Home() {
 
       {/* SERVICES GRID */}
       <section>
+        <CoverflowSlider />
         <h2 className="text-3xl font-bold text-primary mb-6">Our Therapies</h2>
         <div className="grid md:grid-cols-4 gap-6">
           {SERVICES.map((s) => (
