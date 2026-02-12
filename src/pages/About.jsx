@@ -12,13 +12,15 @@ export default function About() {
         {/* Short meta description */}
         <meta
           name="description"
-          content="Rudra Cura is a holistic healing center offering Varma Thokkanam, Dorn Therapy, Reflexology, and energy healing to restore balance and wellbeing."
+          content="Discover Rudra Cura, a leading wellness centre in Saidapet, Chennai offering  
+          varma Thokkanam, meipadam, TCM, aromatherapy, yoga, and meditation. Reduce stress, improve vitality, and achieve 
+          holistic health."
         />
 
         {/* Long meta description */}
         <meta
           name="keywords"
-          content="Rudra Cura, holistic healing center, Varma Thokkanam, Dorn Therapy, reflexology, alternative therapy near me, natural pain relief, energy healing India"
+          content="Rudra Cura, holistic healing center, Holistic healing Chennai, Wellness centre in Saidapet Chennai, Varma Thokkanam, Dorn Therapy, reflexology, alternative therapy near me, natural pain relief, Stress management Chennai, Aromatherapy Chennai wellness, Yoga and meditation Saidapet "
         />
 <meta property="og:title" content="About Rudra Cura | Holistic Wellness Center in Chennai" />
 <meta
@@ -66,7 +68,7 @@ export default function About() {
 
           <p className="mt-6 text-lg text-white/90 max-w-3xl mx-auto">
             At Rudra Cura, we guide individuals toward holistic wellness through
-            authentic therapies rooted in ancient wisdom and conscious care.
+            ancient wisdom and conscious care.
           </p>
 
           <a
@@ -90,11 +92,17 @@ export default function About() {
             About Rudra Cura
           </h2>
           <p className="mt-4 text-gray-700 leading-relaxed max-w-4xl">
-            Rudra Cura is a holistic healing and alternative therapy center
-            dedicated to restoring balance in the body, mind, and energy system.
-            Our approach focuses on root-cause healing rather than temporary
-            relief, combining traditional wisdom with mindful therapeutic care.
+            Rudra Cura is a dedicated space designed to support and enhance an individual's overall well-being, 
+            moving beyond mere illness treatment to proactive holistic health.
           </p>
+          <h2 className="text-3xl font-bold text-[#5B2D00] mt-4">
+            Our Philosophy
+          </h2>
+          <p className="mt-4 text-gray-700">At Rudra Cura, prevention is the foundation of health. We empower our clients with knowledge, 
+            practices, and treatments that encourage long-term well-being. Whether you’re seeking stress 
+            management and holistic healing in in Chennai, or a space to rejuvenate, 
+            Rudra Cura is your trusted partner in wellness.
+</p>
         </motion.div>
 
         {/* ================= WHY US ================= */}
@@ -124,15 +132,20 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-2xl font-semibold text-[#5B2D00]">
-            Our Core Therapies
+            Our Integrative Approach
           </h3>
-
+<p className="mt-4 text-gray-700">Unlike conventional clinics, Rudra Cura focuses on preventive health and lifestyle enhancement. 
+  We combine time-tested therapies with contemporary wellness techniques to support the mind, body, and spirit. 
+  Our offerings include:
+</p>
           <div className="mt-6 space-y-6 text-gray-700 max-w-4xl">
-            <p><strong>Varma Thokkanam:</strong> Traditional Siddha therapy activating vital energy points to relieve pain and restore circulation.</p>
+            <p><strong>Varma Thokkanam:</strong>South Indian healing traditions, activates vital energy points to relieve pain and restore circulation.</p>
             <p><strong>Dorn Therapy:</strong> Gentle spinal and joint realignment using guided movements for long-term relief.</p>
             <p><strong>Reflexology:</strong> Pressure-based therapy stimulating reflex zones for systemic balance.</p>
+            <p><strong>Traditional Chinese Medicine (TCM):</strong>  for holistic healing.</p>
             <p><strong>Aromatherapy:</strong> Therapeutic essential oils supporting emotional calm and deep relaxation.</p>
-          </div>
+<p><strong>Yoga & Meditation:</strong> for stress relief and inner clarity.</p>          
+</div>
         </motion.div>
       </section>
 
@@ -165,16 +178,16 @@ export default function About() {
             </h3>
 
             <p className="mt-4 md:text-xl text-gray-700 leading-relaxed">
-              Rudra Cura was founded by a dedicated holistic practitioner whose
-              life’s work has been centered on natural healing, energy balance,
-              and traditional therapeutic sciences. With years of hands-on
-              experience, the founder envisioned Rudra Cura as a space where
-              authentic healing meets compassionate care.
+              Rudra Cura is the brainchild of Mr. Shankar G.K., a Cosmic Guru, whose life’s work has been 
+              centered around the ancient arts of Adimurai, Kung Fu, Meipadam, Varmam, Energy Healing, and Guasa.
+               Over the years, he has healed countless individuals, balancing their body, mind, and spirit.
             </p>
 
             <p className="mt-4 text-gray-700 md:text-xl">
-              This vision continues to guide every therapy, ensuring integrity,
-              professionalism, and meaningful transformation for every client.
+              Driven by a desire to further empower others, he envisioned Rudra Cura as a way to offer holistic 
+              healing to all. Mr. Shankar continues to expand his expertise, delving into the “64 Arts of Life” 
+              (“Aaya Kalaigal 64”), including violin, arts, astrology, and more. His vision and dedication 
+              inspire the essence of Rudra Cura.
             </p>
           </motion.div>
         </div>

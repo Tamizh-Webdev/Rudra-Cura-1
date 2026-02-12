@@ -1,5 +1,6 @@
 import React from "react";
 import EnquiryForm from "../components/EnquiryForm";
+import RelatedServices from "../components/RelatedServices"
 import { motion } from "framer-motion";
 import { FiStar, FiHeart, FiShield, FiThumbsUp } from "react-icons/fi";
 import { Helmet } from "react-helmet-async";
@@ -142,7 +143,7 @@ export default function Home() {
     <div className="space-y-20">
 
       {/* HERO SECTION */}
-      <section className="grid md:grid-cols-2 gap-10 items-center">
+      <section className="grid items-center mt-8 ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -152,15 +153,14 @@ export default function Home() {
             Rudra Cura
           </h1>
           <p className="mt-4 text-gray-700 text-lg">
-            At <b>Rudra Cura</b>, we blend ancient natural therapies with modern understanding to help you 
-            relieve pain, reduce stress, and achieve long-term wellbeing.
+            At <b>Rudra Cura</b>, we go beyond treating illness—we empower individuals to achieve lasting holistic health and well-being. Our integrative approach blends traditional practices like yoga, meditation, meipadam, varmam, and massage with modern therapies such as TCM and aromatherapy. We focus on root-cause healing, addressing the whole person's body, mind, and energy system—to restore balance and vitality. With personalized care and a commitment to natural healing, we guide you on a transformative journey toward optimal health and inner harmony.
           </p>
 
           <a
-            href="/services"
+            href="/about"
             className="inline-block mt-6 bg-primary text-white px-6 py-3 rounded-lg shadow hover:bg-primary/90 transition"
           >
-            Explore Our Services
+            Our History
           </a>
         </motion.div>
       </section>

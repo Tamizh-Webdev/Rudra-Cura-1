@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 
 export default function RelatedServices({ services, currentSlug }) {
-  const related = services.filter((s) => s.slug !== currentSlug).slice(0, 4)
+  const related = services.filter((s) => s.slug !== currentSlug).slice(0, 6)
 
   if (!related.length) return null
 
