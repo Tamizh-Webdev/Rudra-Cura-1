@@ -13,13 +13,14 @@
     "node": "24.x"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
     "framer-motion": "^10.12.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.12.0",
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1"
+    "react-router-dom": "^7.12.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
