@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './src/components/Navbar'
 import Footer from './src/components/Footer'
-import Programs from './src/pages/Programs'
 import About from './src/pages/About'
 import { lazy, Suspense } from "react";
 import ServiceDetail from "./src/pages/ServiceDetail"
@@ -32,7 +31,6 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
               <Route path="/services/:slug" element={<ServiceDetail />} />
-              <Route path="/programs" element={<Programs />} />
               <Route path="/about" element={<About />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/blog" element={<Blog />} />
