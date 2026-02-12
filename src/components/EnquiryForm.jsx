@@ -218,7 +218,7 @@ export default function EnquiryForm({
           <button
             type="submit"
             disabled={loading}
-            className="bg-primary text-white px-4 py-2 rounded"
+            className="Submit-button bg-primary text-white px-4 py-2 rounded"
           >
             {loading ? "Sending…" : "Submit Enquiry"}
           </button>

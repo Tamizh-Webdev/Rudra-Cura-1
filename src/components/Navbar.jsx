@@ -12,7 +12,6 @@ export default memo(function Navbar() {
   const nav = [
     { to: '/', label: 'Home' },
     { to: '/services', label: 'Services' },
-    { to: '/programs', label: 'Programs' },
     { to: '/about', label: 'About Us' },
     { to: '/careers', label: 'Careers' },
     { to: '/blog', label: 'Blog' },

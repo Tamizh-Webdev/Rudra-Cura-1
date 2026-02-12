@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './src/components/Navbar'
 import Footer from './src/components/Footer'
-import About from './src/pages/About'
 import { lazy, Suspense } from "react";
 import ServiceDetail from "./src/pages/ServiceDetail"
 import NotFound from "./src/pages/NotFound"
@@ -12,7 +11,7 @@ const Home = lazy(() => import("./src/pages/Home"));
 const Services = lazy(() => import("./src/pages/Services"));
 const Careers = lazy(() => import("./src/pages/Careers"));
 const Blog = lazy(() => import("./src/pages/Blog"));
-
+const About = lazy(() => import("./src/pages/About"));
 export default function App() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
