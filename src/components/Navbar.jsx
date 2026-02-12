@@ -59,7 +59,7 @@ export default memo(function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl bg-/70"
+          className="sandwich-button md:hidden text-3xl bg-/70"
           onClick={() => setOpen(!open)}
         >
           {open ? <FiX /> : <FiMenu />}

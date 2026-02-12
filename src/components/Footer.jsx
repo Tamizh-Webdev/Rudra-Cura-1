@@ -123,16 +123,16 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Follow Us</h4>
           <div className="flex gap-4 text-xl text-gray-600">
-            <a href="https://www.instagram.com/rudra_cura/" target="_blank" rel="noreferrer" className="hover:text-primary">
+            <a href="https://www.instagram.com/rudra_cura/" target="_blank" rel="noreferrer" aria-label="Visit Rudra Cura Instagram page" className="hover:text-primary">
               <FaInstagram />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61574053940608" target="_blank" rel="noreferrer" className="hover:text-primary">
+            <a href="https://www.facebook.com/profile.php?id=61574053940608" target="_blank" rel="noreferrer" aria-label="Visit Rudra Cura Facebook page" className="hover:text-primary">
               <FaFacebook />
             </a>
-            <a href="https://wa.me/917299636075" target="_blank" rel="noreferrer" className="hover:text-primary">
+            <a href="https://wa.me/917299636075" target="_blank" rel="noreferrer" aria-label="Chat with Rudra Cura on WhatsApp" className="hover:text-primary">
               <FaWhatsapp />
             </a>
-            <a href="https://www.youtube.com/@RudraCura" target="_blank" rel="noreferrer" className="hover:text-primary"> <FaYoutube /> </a>
+            <a href="https://www.youtube.com/@RudraCura" target="_blank" rel="noreferrer" aria-label="Visit Rudra Cura YouTube channel" className="hover:text-primary"> <FaYoutube /> </a>
           </div>
         </div>
          </div>

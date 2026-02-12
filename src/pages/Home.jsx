@@ -118,6 +118,11 @@ export default function Home() {
   <motion.img
     src={heroImg}
     alt="Holistic Therapy"
+    width="1600"
+  height="900"
+  fetchPriority="high"
+  loading="eager"
+  decoding="async"
     className="w-full h-[500px] md:h-[650px] object-cover rounded-xl shadow-lg"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
