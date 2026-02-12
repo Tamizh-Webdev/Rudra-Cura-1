@@ -180,25 +180,6 @@ export default function Home() {
       {/* SERVICES GRID */}
       <section>
         <CoverflowSlider />
-        <h2 className="text-3xl font-bold text-primary mb-6">Our Therapies</h2>
-        <div className="grid md:grid-cols-4 gap-6">
-          {SERVICES.map((s) => (
-            <motion.div
-              key={s.title}
-              whileHover={{ scale: 1.03 }}
-              className="bg-accent p-6 rounded-xl shadow-sm "
-            >
-              <h4 className="text-xl font-semibold text-primary">{s.title}</h4>
-              <p className="text-primary-700 text-sm mt-2">{s.desc}</p>
-              <a
-                href="/services"
-                className="text-primary text-sm mt-3 inline-block hover:underline"
-              >
-                Learn More →
-              </a>
-            </motion.div>
-          ))}
-        </div>
       </section>
 
       {/* WHY CHOOSE US */}

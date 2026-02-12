@@ -48,6 +48,64 @@ export default function ServiceDetail() {
           {service.description}
         </p>
 
+      {/* About */}
+      {service.about && (
+        <>
+          <h2 className="text-2xl font-semibold mb-1">About</h2>
+          <p className="mb-6 whitespace-pre-line">
+            {service.about}
+          </p>
+        </>
+      )}
+
+      {/* Benefits */}
+      {service.benefits && (
+        <>
+          <h2 className="text-2xl font-semibold mb-1">Best For</h2>
+          <ul className="list-disc pl-6  mt-1 mb-6">
+            {service.benefits.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {/* Process */}
+      {service.process && (
+        <>
+          <h2 className="text-2xl font-semibold mb-3">Process</h2>
+          <ul className="list-disc pl-6 mb-6">
+            {service.process.map((step, i) => (
+              <li key={i}>{step}</li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {/* Guidelines */}
+      {service.guidelines && (
+        <>
+          <h2 className="text-2xl font-semibold mb-3">Guidelines</h2>
+          <ul className="list-disc pl-6 mb-6">
+            {service.guidelines.map((rule, i) => (
+              <li key={i}>{rule}</li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {/* Types */}
+      {service.types && (
+        <>
+          <h2 className="text-2xl font-semibold mb-3">Types of Varma Thokkanam</h2>
+          <ul className="list-disc pl-6">
+            {service.types.map((type, i) => (
+              <li key={i}>{type}</li>
+            ))}
+          </ul>
+        </>
+      )}
+
         {/* CTA */}
         <a
           className="inline-block bg-primary text-white px-6 py-3 rounded-lg" href="#enquiry"

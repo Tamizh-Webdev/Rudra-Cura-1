@@ -148,6 +148,7 @@ export default function EnquiryForm({
           <select
             value={countryCode}
             onChange={(e) => setCountryCode(e.target.value)}
+            name = "countryCode"
             className="border rounded px-3 py-2"
             required
           >
@@ -160,6 +161,7 @@ export default function EnquiryForm({
 
           <input
             type="text"
+            name = "phone"
             inputMode="numeric"
             maxLength={10}
             placeholder="10-digit phone"

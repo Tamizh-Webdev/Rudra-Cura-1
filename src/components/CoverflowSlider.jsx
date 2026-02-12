@@ -17,7 +17,7 @@ export default function TherapyGallery() {
 ].map((s) => ({ ...s, slug: slugify(s.title), }))
 
   return (
-    <section className="py-20 bg-gradient-to-b ">
+    <section className=" bg-gradient-to-b ">
       <div className="max-w-7xl mx-auto px-4 text-center">
 
         {/* Section Title */}

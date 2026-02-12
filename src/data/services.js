@@ -6,7 +6,37 @@ const SERVICES = [
     slug: "varma-thokkanam",
     image: "/images/varma.webp",
     description:
-      "An ancient Tamil Siddha therapy that stimulates vital energy points to relieve pain and restore balance.",
+      "Varma thokanam is an ancient South Indian system of traditional medicine and martial arts, originating in the Tamil Sage Tradition. It’s a blend of acupressure, neurology, orthopedics, and energy medicine.",
+      
+    benefits: [
+      "Posture imbalance",
+      "Spine-related problems",
+      "Spondylitis",
+      "Scoliosis",
+      "Nervous system-related issues",
+      "Pain management",
+    ],
+
+    process: [
+      "Diagnosis is done by traditional varmam analysis method.",
+      "Acute cases → once a week sessions.",
+      "Chronic cases → twice a week sessions.",
+      "Strengthening exercises (Meipadam) are given based on condition.",
+    ],
+
+    guidelines: [
+      "Food (solid or liquid) must be taken at least 30 minutes before session.",
+      "Wear flexible attire during session.",
+      "Inform about medical conditions like low BP, nausea, high BP beforehand.",
+    ],
+
+    types: [
+      "Herbal Varma Thokkanam",
+      "Aroma Varma Thokkanam",
+      "Nettiyeduthal",
+      "Dasha Vayu Thattu",
+      "Varma Pulli Thattudhal",
+    ],
   },
   {
     title: "Dorn Therapy",
